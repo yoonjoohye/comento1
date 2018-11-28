@@ -12,7 +12,7 @@
    
 <v-infinite-scroll :loading="loading" @top="prevPage" @bottom="nextPage" :offset='10'>
    <!--게시물-->
-    <div class="list" v-for="(data,index) in board" style="cursor:pointer;" >
+    <div class="list" v-for="(data,index) in board" >
         <a class="list_a" v-bind:href="'/#/detail/'+data.no">
         <div class="no">
             <div class="text-left">{{data.category_no}}</div> 
@@ -142,6 +142,8 @@ export default {
 <style lang="less">
 @color:#333333;
 @border-color:#eeeeee;
+@font-color:black;
+@comento-color:#00c854;
 .Main{
     margin:0;
     padding:0;
@@ -151,18 +153,24 @@ export default {
 .filter{
     margin-top:2%;
 }
+.btn.btn-primary{
+    background-color:@comento-color!important;
+    border:0px!important;
+}
 a{  
-    text-decoration:none!important
+    color:@font-color!important;
+    text-decoration:none!important;
 }
 a.on{  
-   color:red!important;
+   color:@comento-color!important;
 }
 .sort{
     text-align:center;
     float:right;
-    color:black;
+    color:@font-color;
 }
 .list{
+    cursor:pointer;
     border:1px solid @border-color;
     padding:2em;
     margin-top:2%;
@@ -176,20 +184,20 @@ a.on{
 .text-left{
     float:left;
     text-overflow: ellipsis;
-    color:black;
+    color:@font-color;
 }
 .no{
-    color:black;
+    color:@font-color;
     border-bottom:1px solid @border-color;
 }
 
 .title{
     font-size:2em;
-    color:black;
+    color:@font-color;
 }
 .content{
     font-size:2rem;
-    color:black;
+    color:@font-color;
 }
 .board{
     clear:both;

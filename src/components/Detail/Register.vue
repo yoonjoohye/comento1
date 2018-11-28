@@ -8,9 +8,8 @@
             </div> 
             <div class="modal-body"> 
                 <div class="explain">
-                    지금 가입하면 꿈꾸던 기업에 재직 중인
-                    현직자와 <span class="highlight">익명</span>으로 대화할 수 있습니다.
-                </div><br/>
+            지금 가입하면 꿈꾸던 기업에 재직 중인 현직자와 <span class="highlight">익명</span>으로 대화할 수 있습니다.
+                </div>
                 <div class="register_way">
                     <button class="facebook">페이스북 계정으로 회원가입</button><br>
                     <button class="google">구글 계정으로 회원가입</button><br>
@@ -42,23 +41,33 @@ export default{
 }
 </script>
 
-<style>
+<style lang="less">
+@border:1.5px solid #eeeeee;
+.modal fade{
+
+}
 #myModalLabel{
     font-weight:bold;
+}
+.modal-header{
+    border-bottom:0px!important;
 }
 .modal-title{
     text-align:center!important;
 }
 .btn.btn-default{
-    width:100%;
-    border:0px;
+    width:100%!important;
+    border:0px!important;
 }
 .info{
-    border-top:1px solid #eeeeee;
+    border-top:@border;
 }
 .explain{
-    border:2px solid #eeeeee;
-    padding:4%;
+    border:@border;
+    padding:4.5%;
+    margin-bottom:10%;
+    font-size:12pt;
+    overflow:hidden;
 }
 .modal-body{
     text-align:center!important;
@@ -68,27 +77,27 @@ export default{
     background-color:#3b5998;
     color:white;
     font-weight:bold;
-    border:2px solid #eeeeee;
+    border:@border;
     width:100%;
-    padding:5%;
+    padding:3%;
     margin-bottom:3%;
 }
 .google{
     background-color:#ea4335;
     color:white;
     font-weight:bold;
-    border:2px solid #eeeeee;
+    border:@border;
     width:100%;
     height:100%;
-    padding:5%;
+    padding:3%;
     margin-bottom:3%;
 }
 .naver{
     background-color:#00bd39;
     color:white;
     font-weight:bold;
-    border:2px solid #eeeeee;
-    padding:5%;
+    border:@border;
+    padding:3%;
     width:100%;
 }
 .highlight{
