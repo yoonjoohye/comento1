@@ -28,9 +28,7 @@
 export default{
     /*로딩될 때 모달 보이게*/ 
     created(){
-       $(window).load(function(){
-            $('#myModal').modal({backdrop: 'static', keyboard: false},'show');
-        });
+        $('#myModal').modal({backdrop: 'static', keyboard: false},'show');
     },
     methods:{
         /*나중에 보기 누르면 상위 컴포넌트로 감*/ 
