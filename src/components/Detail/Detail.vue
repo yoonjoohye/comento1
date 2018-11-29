@@ -91,6 +91,7 @@
 
 <style lang="less">
 @color:#dddddd;
+@border:0px;
 .all{
     margin:0;
     padding:0;
@@ -110,13 +111,13 @@
 .register{
     background-color:#00c854;
     color:white;
-    border:1.5px solid @color;
+    border:@border;
     padding:1.1em;
     content:"SNS계정으로 빠른 회원가입";
 }
 .login{
     background-color:#eeeeee;
-    border:1.5px solid @color;
+    border:@border;
     padding:1.1em;
 }
 .highlight{
@@ -138,11 +139,7 @@
     box-shadow: 0 5px 10px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133,0.22);
 }
 .reply{
-    border:1px solid #eeeeee;
-    padding:2em;
-    margin-top:2%;
-    margin-bottom:2%;
-    box-shadow: 0 5px 10px rgba(189, 189, 189, 0.326), 0 5px 12px rgba(165, 162, 162, 0.34);
+   .details
 }
 .no{
     color:black;

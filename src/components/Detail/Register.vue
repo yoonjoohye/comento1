@@ -41,7 +41,7 @@ export default{
 </script>
 
 <style lang="less">
-@border:1.5px solid #eeeeee;
+@border:0;
 #myModalLabel{
     font-weight:bold;
 }

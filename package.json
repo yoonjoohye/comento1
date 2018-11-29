@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
+    "bluebird": "^3.5.3",
     "bootstrap-vue": "^2.0.0-rc.11",
     "es6-promise": "^4.2.5",
     "event-source-polyfill": "^1.0.4",
@@ -76,7 +77,6 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
+    "last 2 versions"
   ]
 }
