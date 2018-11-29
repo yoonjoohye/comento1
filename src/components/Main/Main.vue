@@ -240,7 +240,7 @@ a.on{
     }
     .ad_img2{
         width:100%;
-        height:50rem;
+        height:40rem;
     }
     .ad_title{
         clear:both;

@@ -43,9 +43,6 @@ export default{
 
 <style lang="less">
 @border:1.5px solid #eeeeee;
-.modal fade{
-
-}
 #myModalLabel{
     font-weight:bold;
 }
