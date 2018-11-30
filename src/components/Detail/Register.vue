@@ -55,11 +55,8 @@ export default{
     width:100%!important;
     border:0px!important;
 }
-.info{
-    border-top:@border;
-}
 .explain{
-    border:@border;
+    border:1.5px solid #eeeeee;
     padding:4.5%;
     margin-bottom:10%;
     font-size:12pt;

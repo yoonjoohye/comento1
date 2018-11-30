@@ -1,4 +1,3 @@
-import Promise from 'bluebird';
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/components/Main/Main.vue'
